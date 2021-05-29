@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Buycoin Test</title>
+	</head>
+	<body>
+		<main>
+			<div class="home home--flex-center">
+				<div class="home__search">
+					<section>
+						<h2 class="home__header">I want to see</h2>
+						<form class="home__form" method="POST" id="form-search">
+							<input
+								type="text"
+								id="search"
+								class="home__search"
+								required
+								placeholder="e.g. mr-malomz"
+							/>
+							<p class="home__info home__info--display">
+								Start your search by typing in a Github username
+							</p>
+							<button
+								type="submit"
+								class="home__button home--flex-center"
+								id="search-repo"
+							>
+								search
+							</button>
+						</form>
+						<p class="home__info home__info--display-large">
+							Start your search by typing in a Github username
+						</p>
+					</section>
+				</div>
+			</div>
+			<section class="error" id="error">
+				<div class="error__wrap">
+					<div class="error__details">
+						<svg
+							width="21"
+							height="21"
+							viewBox="0 0 21 21"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M9.62588 8.75H11.3759V13.125H9.62588V8.75ZM9.625 14H11.375V15.75H9.625V14Z"
+								fill="#7F1D1D"
+							/>
+							<path
+								d="M12.047 3.67501C11.7425 3.10188 11.1492 2.74576 10.5 2.74576C9.85074 2.74576 9.25749 3.10188 8.95299 3.67588L2.53224 15.806C2.38976 16.0724 2.31918 16.3713 2.32747 16.6733C2.33575 16.9752 2.42261 17.2698 2.57949 17.528C2.7341 17.7873 2.95367 18.0019 3.21653 18.1504C3.47939 18.2989 3.77644 18.3764 4.07836 18.375H16.9216C17.5411 18.375 18.102 18.0583 18.4214 17.528C18.578 17.2698 18.6647 16.9752 18.673 16.6733C18.6813 16.3713 18.6108 16.0725 18.4686 15.806L12.047 3.67501ZM4.07836 16.625L10.5 4.49488L16.926 16.625H4.07836Z"
+								fill="#7F1D1D"
+							/>
+						</svg>
+						<p class="error__text" id="error-msg"></p>
+					</div>
+					<button class="error__button" id="error-btn">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M18 6L6 18"
+								stroke="#000B48"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M6 6L18 18"
+								stroke="#000B48"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+				</div>
+			</section>
+		</main>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
